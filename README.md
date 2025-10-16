@@ -69,7 +69,7 @@ rectangle SOME_SERVICE {
 rectangle ANOTHER_SERVICE as "An external service number two" {
 }
 ```
-The main idea that nothing should be put inside a `rectangle` block between `{` and `}`
+Here nothing should be put inside a `rectangle` block between `{` and `}`
 
 #### Program system groups and categories
 ```
@@ -81,7 +81,7 @@ rectangle "A service group number two" as ANOTHER_SERVICE_GROUP {
 '... And here go more services or groups
 }
 ```
-The main idea that if other a `rectangle` contains other `rectangle`s or `map`s, it is treated as a group definition, a container including other services and groups.
+The main idea is that if a `rectangle` contains other `rectangle`s or `map`s, it is treated as a group definition, a container including other services and groups.
 
 ### The edges (dataflows)
 ```
