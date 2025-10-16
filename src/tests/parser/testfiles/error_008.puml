@@ -1,0 +1,14 @@
+@startuml
+map A {
+}
+map "B" as C {
+}
+
+A -- C
+A -- B
+A -- D
+
+C -- A
+B -- A
+D -- A
+@enduml

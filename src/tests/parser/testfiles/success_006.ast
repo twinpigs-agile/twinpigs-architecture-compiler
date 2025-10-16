@@ -1,0 +1,174 @@
+ast_node type="root"
+ src: f="<FILE>"
+ attr name="file": <FILE>
+ attr name="hash": 1c6fa5c901ff5b94b387e94bdbc035ecb2910a2f096c3820743b13a73e7a086a
+ child:
+  ast_node type="group"
+   src: f="<FILE>", l="5", c="1"
+   attr name="group_type": group
+   attr name="id": Computers
+   attr name="name": Computers
+   attr name="num_id": 0
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+   child:
+    ast_node type="group"
+     src: f="<FILE>", l="6", c="5"
+     attr name="group_type": computer
+     attr name="id": C
+     attr name="name": C
+     attr name="num_id": 1
+     attr name="num_parent": 0
+     attr name="parent_id": Computers
+     attr name="qualified_id_prefix": ['Computers']
+     attr name="qualified_name_prefix": ['Computers']
+     child:
+      ast_node type="group"
+       src: f="<FILE>", l="7", c="9"
+       attr name="group_type": vm
+       attr name="id": V
+       attr name="name": V
+       attr name="num_id": 2
+       attr name="num_parent": 1
+       attr name="parent_id": C
+       attr name="qualified_id_prefix": ['Computers', 'C']
+       attr name="qualified_name_prefix": ['Computers', 'C']
+       child:
+        ast_node type="program_system"
+         src: f="<FILE>", l="8", c="13"
+         attr name="id": Service1
+         attr name="name": Service1
+         attr name="num_id": 3
+         attr name="num_parent": 2
+         attr name="parent_id": V
+         attr name="properties": OrderedDict()
+         attr name="qualified_id_prefix": ['Computers', 'C', 'V']
+         attr name="qualified_name_prefix": ['Computers', 'C', 'V']
+   child:
+    ast_node type="group"
+     src: f="<FILE>", l="13", c="5"
+     attr name="group_type": computer
+     attr name="id": C1
+     attr name="name": C 1
+     attr name="num_id": 4
+     attr name="num_parent": 0
+     attr name="parent_id": Computers
+     attr name="qualified_id_prefix": ['Computers']
+     attr name="qualified_name_prefix": ['Computers']
+     child:
+      ast_node type="group"
+       src: f="<FILE>", l="14", c="9"
+       attr name="group_type": vm
+       attr name="id": V1
+       attr name="name": V1
+       attr name="num_id": 5
+       attr name="num_parent": 4
+       attr name="parent_id": C1
+       attr name="qualified_id_prefix": ['Computers', 'C1']
+       attr name="qualified_name_prefix": ['Computers', 'C 1']
+       child:
+        ast_node type="program_system"
+         src: f="<FILE>", l="15", c="13"
+         attr name="id": S1
+         attr name="name": S 1
+         attr name="num_id": 6
+         attr name="num_parent": 5
+         attr name="parent_id": V1
+         attr name="properties": OrderedDict()
+         attr name="qualified_id_prefix": ['Computers', 'C1', 'V1']
+         attr name="qualified_name_prefix": ['Computers', 'C 1', 'V1']
+ child:
+  ast_node type="group"
+   src: f="<FILE>", l="21", c="1"
+   attr name="group_type": group
+   attr name="id": Qontainers
+   attr name="name": Q Cs
+   attr name="num_id": 7
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+   child:
+    ast_node type="group"
+     src: f="<FILE>", l="22", c="5"
+     attr name="group_type": containers
+     attr name="id": Ququ
+     attr name="name": Ququ
+     attr name="num_id": 8
+     attr name="num_parent": 7
+     attr name="parent_id": Qontainers
+     attr name="qualified_id_prefix": ['Qontainers']
+     attr name="qualified_name_prefix": ['Q Cs']
+     child:
+      ast_node type="group"
+       src: f="<FILE>", l="23", c="9"
+       attr name="group_type": container
+       attr name="id": Qontainer
+       attr name="name": Qontainer
+       attr name="num_id": 9
+       attr name="num_parent": 8
+       attr name="parent_id": Ququ
+       attr name="qualified_id_prefix": ['Qontainers', 'Ququ']
+       attr name="qualified_name_prefix": ['Q Cs', 'Ququ']
+       child:
+        ast_node type="program_system"
+         src: f="<FILE>", l="24", c="13"
+         attr name="id": S2
+         attr name="name": Service 2
+         attr name="num_id": 10
+         attr name="num_parent": 9
+         attr name="parent_id": Qontainer
+         attr name="properties": OrderedDict({'Info': 'Some Service'})
+         attr name="qualified_id_prefix": ['Qontainers', 'Ququ', 'Qontainer']
+         attr name="qualified_name_prefix": ['Q Cs', 'Ququ', 'Qontainer']
+         child:
+          ast_node type="property"
+           src: f="<FILE>", l="25", c="17"
+           attr name="id": Info
+           attr name="value": Some Service
+     child:
+      ast_node type="ext_program_system"
+       src: f="<FILE>", l="28", c="9"
+       attr name="group_type": container
+       attr name="id": K2
+       attr name="name": Kontainer
+       attr name="num_id": 11
+       attr name="num_parent": 8
+       attr name="parent_id": Ququ
+       attr name="qualified_id_prefix": ['Qontainers', 'Ququ']
+       attr name="qualified_name_prefix": ['Q Cs', 'Ququ']
+   child:
+    ast_node type="ext_program_system"
+     src: f="<FILE>", l="32", c="5"
+     attr name="group_type": containers
+     attr name="id": Ququ2
+     attr name="name": QQ 2
+     attr name="num_id": 12
+     attr name="num_parent": 7
+     attr name="parent_id": Qontainers
+     attr name="qualified_id_prefix": ['Qontainers']
+     attr name="qualified_name_prefix": ['Q Cs']
+ child:
+  ast_node type="ext_program_system"
+   src: f="<FILE>", l="36", c="1"
+   attr name="group_type": external
+   attr name="id": SomeExt
+   attr name="name": SomeExt
+   attr name="num_id": 13
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="ext_program_system"
+   src: f="<FILE>", l="39", c="1"
+   attr name="group_type": external
+   attr name="id": Aext
+   attr name="name": Another Ext
+   attr name="num_id": 14
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []

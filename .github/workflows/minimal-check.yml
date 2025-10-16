@@ -1,0 +1,22 @@
+name: Minimal check (for PRs and pushes to main)
+on:
+  pull_request:
+    branches:
+      - 'main'
+  push:
+    branches:
+      - 'main'
+jobs:
+  build_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+      - run: sudo apt-get install -y gettext
+      - run: chmod +x *.sh && ./build-all.sh
+        env:
+          PROGRAM_VERSION: 'Test build'
+

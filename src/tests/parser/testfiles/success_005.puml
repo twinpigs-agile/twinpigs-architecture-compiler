@@ -1,0 +1,6 @@
+@startuml
+map A {
+}
+
+A --> A : \x20 \u0020!\n
+@enduml

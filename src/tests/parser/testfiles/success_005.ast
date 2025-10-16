@@ -1,0 +1,26 @@
+ast_node type="root"
+ src: f="<FILE>"
+ attr name="file": <FILE>
+ attr name="hash": 8814ee14e4f4b2069285238b956a861d8624a6f42e1c1899b2b02795a18a0d26
+ child:
+  ast_node type="program_system"
+   src: f="<FILE>", l="2", c="1"
+   attr name="id": A
+   attr name="name": A
+   attr name="num_id": 0
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="properties": OrderedDict()
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="5", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": A
+   attr name="info":    !
+
+   attr name="num_id1": 0
+   attr name="num_id2": 0

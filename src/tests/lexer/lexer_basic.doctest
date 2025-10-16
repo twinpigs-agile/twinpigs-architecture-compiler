@@ -1,0 +1,6 @@
+>>> from pc.errorlog.error import StackedErrorContext
+>>> from pc.lexer.lexer import Lexer
+>>> import sys
+>>> ec = StackedErrorContext(ofile=sys.stdout)
+>>> l = Lexer(ec, "FNAME"); l.build()
+>>> l.input("abc")

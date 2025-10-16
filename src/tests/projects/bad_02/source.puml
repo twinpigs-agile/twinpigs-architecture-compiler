@@ -1,0 +1,5 @@
+@startuml
+map A {
+}
+A -- C
+@enduml

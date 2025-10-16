@@ -1,0 +1,24 @@
+@startuml
+mAp SOME_EMPTY_MAP {
+}
+map "ANOTHER EMPTY MAP" AS ANOTHER_EMPTY_MAP {
+}
+
+  'comment
+
+MaP "SECOND EMPTY MAP" as SECOND_EMPTY_MAP {
+}
+
+MAP REAL_MAP {
+    hello =>	превед!
+    bye =>дасведанея!
+bear=>  медвед!
+good_morning     =>   бобройе удро!
+}
+map "An aliased map" As REAL_MAP_ALIASED {
+    hello => превед!
+    bye =>дасведанея!
+bear=>  медвед!
+good_morning     =>   бобройе\nудро!
+}
+@enduml

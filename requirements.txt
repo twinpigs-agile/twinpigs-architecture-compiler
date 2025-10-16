@@ -1,0 +1,8 @@
+ply
+Babel
+python-gettext
+Jinja2
+PyInstaller
+mypy
+black
+flake8

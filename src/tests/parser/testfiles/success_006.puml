@@ -1,0 +1,41 @@
+@startuml
+
+
+'RECTANGLE', 'AS', 'MAP', 'SERVICE', 'GROUP', 'COMPUTER', 'CONTAINER', 'CONTAINERS', 'VM', 'EXTERNAL'
+group Computers {
+    computer C {
+        vm V {
+            service Service1 {
+            }
+        }
+    }
+
+    computer "C 1" as C1 {
+        vm "V1" as V1 {
+            service "S 1" as S1 {
+            }
+        }
+    }
+}
+
+grOup "Q Cs" as Qontainers {
+    Containers Ququ {
+        container Qontainer {
+            service "Service 2" as S2 {
+                Info => Some Service
+            }
+        }
+        Container "Kontainer" as K2 {
+        }
+    }
+
+    Containers "QQ 2" as Ququ2 {
+    }
+}
+
+externaL SomeExt {
+}
+
+extERnal "Another Ext" as Aext {
+}
+@enduml

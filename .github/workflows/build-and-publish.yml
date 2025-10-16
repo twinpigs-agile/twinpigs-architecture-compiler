@@ -1,0 +1,58 @@
+name: Build and publish (Linux+Win)
+
+on: [workflow_dispatch]
+
+permissions:
+  contents: write   # to tag the new version
+
+jobs:
+  build_linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v6
+      with:
+        python-version: '3.13'
+        cache: pip
+    - run: sudo apt-get install -y gettext
+    - name: Bump version and push tag
+      id: tag_version
+      uses: mathieudutour/github-tag-action@v6.2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - run: chmod +x *.sh && ./build-all.sh
+      env:
+        PROGRAM_VERSION: ${{ steps.tag_version.outputs.new_tag }}
+    - name: Upload Linux Release Assets
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ steps.tag_version.outputs.new_tag }}
+        name: Release ${{ steps.tag_version.outputs.new_tag }}
+        body: ${{ steps.tag_version.outputs.changelog }}
+        files: 'out/distr/twinpigs-architecture-compiler/puml2graphml
+          '
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    outputs:
+      version: ${{ steps.tag_version.outputs.new_tag }}
+  build_windows:
+    needs:
+    - build_linux
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v6
+      with:
+        python-version: '3.13'
+        cache: pip
+    - run: chmod +x *.sh && ./build-all.sh
+      shell: bash
+      env:
+        PROGRAM_VERSION: ${{ needs.build_linux.outputs.version }}
+    - name: Upload Windows Release Asset
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ needs.build_linux.outputs.version }}
+        files: out/distr/twinpigs-architecture-compiler/puml2graphml.exe
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

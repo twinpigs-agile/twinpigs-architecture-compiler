@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by Twin Pigs-->
+
+  <key for="node" id="d0" yfiles.type="nodegraphics"/>
+  <key attr.name="ident" attr.type="string" for="node" id="d1"/>
+  <key attr.name="name" attr.type="string" for="node" id="d2"/>
+  <key attr.name="file" attr.type="string" for="node" id="d3"/>
+  <key attr.name="description" attr.type="string" for="node" id="d4"/>
+  <key attr.name="stack" attr.type="string" for="node" id="d5"/>
+  <key attr.name="env" attr.type="string" for="node" id="d6"/>
+  <key attr.name="team" attr.type="string" for="node" id="d7"/>
+  <key attr.name="file" attr.type="string" for="edge" id="d11"/>
+  <key attr.name="info" attr.type="string" for="edge" id="d12"/>
+  <key for="edge" id="d13" yfiles.type="edgegraphics"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d14"/>
+  <key for="graphml" id="d21" yfiles.type="resources"/>
+  <graph edgedefault="directed" id="G">
+    
+      <node id="n0">
+        <data key="d1" xml:space="preserve">AIS_RCV</data>
+        <data key="d2" xml:space="preserve">External AIS Receiver</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 3, column 1</data>
+        <data key="d4" xml:space="preserve"></data>
+        <data key="d0">
+          <y:ShapeNode>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" textColor="#000000" visible="true" xml:space="preserve">External AIS Receiver</y:NodeLabel>
+            <y:Geometry height="100.0" width="100.0"/>
+            <y:Fill color="#CCCCCC" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:Shape type="rectangle"/>
+          </y:ShapeNode>
+        </data>
+      </node>
+  
+      <node id="n1">
+        <data key="d1" xml:space="preserve">IOT_EDGE_CONTAINERS</data>
+        <data key="d2" xml:space="preserve">IOT_EDGE_CONTAINERS</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 6, column 1</data>
+        <data key="d0" xml:space="preserve">
+          <y:ProxyAutoBoundsNode>
+            <y:Realizers active="0">
+              <y:GenericGroupNode configuration="DemoGroup">
+                <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+                <y:BorderStyle color="#000000" type="line" width="8.0"/>
+                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="inner" modelPosition="t" borderDistance="14.0" textColor="#000000" verticalTextPosition="top" visible="true" xml:space="preserve">IOT_EDGE_CONTAINERS</y:NodeLabel>
+                <!--<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" xml:space="preserve">IOT_EDGE_CONTAINERS</y:NodeLabel>-->
+                <y:State autoResize="true" closed="false" closedHeight="250.0" closedWidth="300.0"/>
+                <y:Insets bottom="45" bottomF="45.0" left="45" leftF="45.0" right="45" rightF="45.0" top="45" topF="45.0"/>
+                <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              </y:GenericGroupNode>
+            </y:Realizers>
+          </y:ProxyAutoBoundsNode>
+        </data>
+        <graph edgedefault="directed" id="subgraph_1">
+
+          
+      <node id="n2">
+        <data key="d1" xml:space="preserve">NMEA_CONNECTOR_EDGE</data>
+        <data key="d2" xml:space="preserve">NMEA Connector (IOT Edge)</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 8, column 1</data>
+        <data key="d4" xml:space="preserve">Read GPS &amp; Speedlog Info</data>
+        <data key="d5" xml:space="preserve">Java</data>
+        <data key="d6" xml:space="preserve">Container(Linux)</data>
+        <data key="d7" xml:space="preserve">IOT Edge Team</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">NMEA_CONNECTOR_EDGE</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: NMEA Connector (IOT Edge)
+T: IOT Edge Team
+Stk: Java
+Env: Container(Linux)
+Read GPS &amp; Speedlog Info<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n3">
+        <data key="d1" xml:space="preserve">NMEA_CONNECTOR_VOYAGE</data>
+        <data key="d2" xml:space="preserve">NMEA Connector (Voyage)</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 15, column 1</data>
+        <data key="d4" xml:space="preserve">Read GPS &amp; Speedlog Info</data>
+        <data key="d5" xml:space="preserve">C++, Linux/Windows</data>
+        <data key="d6" xml:space="preserve">Container(Linux)</data>
+        <data key="d7" xml:space="preserve">UniNAV Team</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">NMEA_CONNECTOR_VOYAGE</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: NMEA Connector (Voyage)
+T: UniNAV Team
+Stk: C++, Linux/Windows
+Env: Container(Linux)
+Read GPS &amp; Speedlog Info<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n4">
+        <data key="d1" xml:space="preserve">MODBUS_CONNECTOR_VOYAGE</data>
+        <data key="d2" xml:space="preserve">Modbus Connector (Voyage)</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 22, column 1</data>
+        <data key="d4" xml:space="preserve">Supports MODBUS RTU &amp; TCP/IP
+to access hardware</data>
+        <data key="d5" xml:space="preserve">C++, Linux/Windows</data>
+        <data key="d6" xml:space="preserve">Container(Linux)</data>
+        <data key="d7" xml:space="preserve">UniNAV Team</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">MODBUS_CONNECTOR_VOYAGE</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: Modbus Connector (Voyage)
+T: UniNAV Team
+Stk: C++, Linux/Windows
+Env: Container(Linux)
+Supports MODBUS RTU &amp; TCP/IP
+to access hardware<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n5">
+        <data key="d1" xml:space="preserve">MODBUS_CONNECTOR_MS</data>
+        <data key="d2" xml:space="preserve">Modbus Connector (Microsoft)</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 29, column 1</data>
+        <data key="d4" xml:space="preserve">Supports MODBUS RTU &amp; TCP/IP
+to access hardware</data>
+        <data key="d5" xml:space="preserve">.Net Core 2.1, Linux/Windows</data>
+        <data key="d6" xml:space="preserve">Container(Linux)</data>
+        <data key="d7" xml:space="preserve">MS</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">MODBUS_CONNECTOR_MS</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: Modbus Connector (Microsoft)
+T: MS
+Stk: .Net Core 2.1, Linux/Windows
+Env: Container(Linux)
+Supports MODBUS RTU &amp; TCP/IP
+to access hardware<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n6">
+        <data key="d1" xml:space="preserve">AIS_CONNECTOR_VOYAGE</data>
+        <data key="d2" xml:space="preserve">AIS Connector (Voyage)</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 36, column 1</data>
+        <data key="d4" xml:space="preserve">Retrieves AIS data using NMEA 450 (UDP)</data>
+        <data key="d5" xml:space="preserve">C++, Linux/Windows</data>
+        <data key="d6" xml:space="preserve">Container (Linux)</data>
+        <data key="d7" xml:space="preserve">UniNAV Team</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AIS_CONNECTOR_VOYAGE</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: AIS Connector (Voyage)
+T: UniNAV Team
+Stk: C++, Linux/Windows
+Env: Container (Linux)
+Retrieves AIS data using NMEA 450 (UDP)<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n7">
+        <data key="d1" xml:space="preserve">OPC_UA_CONNECTOR_VOYAGE</data>
+        <data key="d2" xml:space="preserve">OPC UA Connector (Voyage)</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 43, column 1</data>
+        <data key="d4" xml:space="preserve">Reads automation data from OPC UA</data>
+        <data key="d5" xml:space="preserve">C#/.Net, Linux/Windows</data>
+        <data key="d6" xml:space="preserve">Container(Linux)</data>
+        <data key="d7" xml:space="preserve">Connected Automation Team</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">OPC_UA_CONNECTOR_VOYAGE</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: OPC UA Connector (Voyage)
+T: Connected Automation Team
+Stk: C#/.Net, Linux/Windows
+Env: Container(Linux)
+Reads automation data from OPC UA<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n8">
+        <data key="d1" xml:space="preserve">NPL</data>
+        <data key="d2" xml:space="preserve">NPL</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 50, column 1</data>
+        <data key="d4" xml:space="preserve"></data>
+        <data key="d5" xml:space="preserve"></data>
+        <data key="d6" xml:space="preserve"></data>
+        <data key="d7" xml:space="preserve"></data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">NPL</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n9">
+        <data key="d1" xml:space="preserve">ISM_NACOS</data>
+        <data key="d2" xml:space="preserve">ISM (NACOS)</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 57, column 1</data>
+        <data key="d4" xml:space="preserve">Reads the automation data from ISM Server</data>
+        <data key="d5" xml:space="preserve">Python, C</data>
+        <data key="d6" xml:space="preserve">Container(Linux)</data>
+        <data key="d7" xml:space="preserve">NACOS</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ISM_NACOS</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: ISM (NACOS)
+T: NACOS
+Stk: Python, C
+Env: Container(Linux)
+Reads the automation data from ISM Server<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n10">
+        <data key="d1" xml:space="preserve">IOT_EDGE</data>
+        <data key="d2" xml:space="preserve">IOT Edge</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 87, column 1</data>
+        <data key="d4" xml:space="preserve">Manages the containers
+&amp; consolidates the data</data>
+        <data key="d5" xml:space="preserve">MS IOT Edge</data>
+        <data key="d6" xml:space="preserve">Linux/Windows (xplatform)</data>
+        <data key="d7" xml:space="preserve">IOT Edge Team</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#8080E0" color2="#c0c0f0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">IOT_EDGE</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: IOT Edge
+T: IOT Edge Team
+Stk: MS IOT Edge
+Env: Linux/Windows (xplatform)
+Manages the containers
+&amp; consolidates the data<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+          
+        </graph>
+      </node>
+  
+      <node id="n11">
+        <data key="d1" xml:space="preserve">ISM_SERVER</data>
+        <data key="d2" xml:space="preserve">ISM Server</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 96, column 1</data>
+        <data key="d4" xml:space="preserve"></data>
+        <data key="d0">
+          <y:ShapeNode>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" textColor="#000000" visible="true" xml:space="preserve">ISM Server</y:NodeLabel>
+            <y:Geometry height="100.0" width="100.0"/>
+            <y:Fill color="#CCCCCC" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:Shape type="rectangle"/>
+          </y:ShapeNode>
+        </data>
+      </node>
+  
+      <node id="n12">
+        <data key="d1" xml:space="preserve">NACOS</data>
+        <data key="d2" xml:space="preserve">NACOS System</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 99, column 1</data>
+        <data key="d4" xml:space="preserve">NACOS Bridge System</data>
+        <data key="d5" xml:space="preserve">C#/.Net</data>
+        <data key="d6" xml:space="preserve">Windows, Board Computers</data>
+        <data key="d7" xml:space="preserve">NACOS Team</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#FFFF80" color2="#ffffc0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">NACOS</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+Name: NACOS System
+T: NACOS Team
+Stk: C#/.Net
+Env: Windows, Board Computers
+NACOS Bridge System<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+      <node id="n13">
+        <data key="d1" xml:space="preserve">CSR</data>
+        <data key="d2" xml:space="preserve">CSR</data>
+        <data key="d3" xml:space="preserve">File projects/prj_01/source.puml, line 107, column 1</data>
+        <data key="d4" xml:space="preserve">Hardware (Robustel firewall
+reconfigured by Voyage)</data>
+        <data key="d5" xml:space="preserve"></data>
+        <data key="d6" xml:space="preserve"></data>
+        <data key="d7" xml:space="preserve">Voyage</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#FFFF80" color2="#ffffc0" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">CSR</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+T: Voyage
+Stk: 
+Hardware (Robustel firewall
+reconfigured by Voyage)<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+  
+    <edge id="e1" source="n9" target="n10" directed="false">
+      <data key="d14" xml:space="preserve">ISM_NACOS--IOT_EDGE</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 118, column 1</data>
+      <data key="d12" xml:space="preserve">Automation data [JSON/TCP]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">Automation data [JSON/TCP]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e2" source="n9" target="n11" directed="false">
+      <data key="d14" xml:space="preserve">ISM_NACOS--ISM_SERVER</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 119, column 1</data>
+      <data key="d12" xml:space="preserve">Automation data [Proprietary protocol]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">Automation data [Proprietary protocol]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e3" source="n10" target="n13" directed="false">
+      <data key="d14" xml:space="preserve">IOT_EDGE--CSR</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 121, column 1</data>
+      <data key="d12" xml:space="preserve">Network communication [TCP/IP]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="standard" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">Network communication [TCP/IP]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e4" source="n8" target="n13" directed="false">
+      <data key="d14" xml:space="preserve">NPL--CSR</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 122, column 1</data>
+      <data key="d12" xml:space="preserve">Network communication [TCP/IP]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="standard" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">Network communication [TCP/IP]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e5" source="n6" target="n0" directed="false">
+      <data key="d14" xml:space="preserve">AIS_CONNECTOR_VOYAGE--AIS_RCV</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 124, column 1</data>
+      <data key="d12" xml:space="preserve">AIS data[AIS_NMEA_DATA/UDP]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="standard" target="none"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">AIS data[AIS_NMEA_DATA/UDP]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e6" source="n6" target="n10" directed="false">
+      <data key="d14" xml:space="preserve">AIS_CONNECTOR_VOYAGE--IOT_EDGE</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 125, column 1</data>
+      <data key="d12" xml:space="preserve">AIS Data[JSON/IOT EDGE SDK]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">AIS Data[JSON/IOT EDGE SDK]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e7" source="n2" target="n10" directed="false">
+      <data key="d14" xml:space="preserve">NMEA_CONNECTOR_EDGE--IOT_EDGE</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 127, column 1</data>
+      <data key="d12" xml:space="preserve">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e8" source="n3" target="n10" directed="false">
+      <data key="d14" xml:space="preserve">NMEA_CONNECTOR_VOYAGE--IOT_EDGE</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 128, column 1</data>
+      <data key="d12" xml:space="preserve">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e9" source="n4" target="n10" directed="false">
+      <data key="d14" xml:space="preserve">MODBUS_CONNECTOR_VOYAGE--IOT_EDGE</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 130, column 1</data>
+      <data key="d12" xml:space="preserve">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e10" source="n5" target="n10" directed="false">
+      <data key="d14" xml:space="preserve">MODBUS_CONNECTOR_MS--IOT_EDGE</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 131, column 1</data>
+      <data key="d12" xml:space="preserve">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">GPS &amp; Speedlog data[JSON/TCP] TODO: TCP?<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e11" source="n7" target="n12" directed="false">
+      <data key="d14" xml:space="preserve">OPC_UA_CONNECTOR_VOYAGE--NACOS</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 133, column 1</data>
+      <data key="d12" xml:space="preserve">Automation info [OPC UA]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">Automation info [OPC UA]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><edge id="e12" source="n7" target="n10" directed="false">
+      <data key="d14" xml:space="preserve">OPC_UA_CONNECTOR_VOYAGE--IOT_EDGE</data>
+      <data key="d11" xml:space="preserve">File projects/prj_01/source.puml, line 134, column 1</data>
+      <data key="d12" xml:space="preserve">Automation info [JSON/TCP]</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="standard" target="none"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">Automation info [JSON/TCP]<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d7">
+    <y:Resources/>
+  </data>
+</graphml>

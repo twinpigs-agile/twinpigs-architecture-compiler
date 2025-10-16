@@ -1,0 +1,119 @@
+@startuml
+rectangle EXTERNAL_SERVICES {
+  map Mailgun {
+    Info => Email delivery service
+  }
+  map GitHub {
+    Info => Source code hosting
+  }
+}
+
+rectangle CORE_SYSTEM {
+  map NAVIGATION_ENGINE {
+    Team => OpenNav Team
+    Stack => Rust
+    Env => Linux
+    Info => Core engine for route calculation
+  }
+
+  map LICENSE_MANAGER {
+    Team => OpenNav Team
+    Stack => Python + FastAPI
+    Env => Docker, Azure Functions
+    Info => Handles license validation and issuance
+  }
+
+  map USER_DATABASE {
+    Team => OpenNav Team
+    Stack => PostgreSQL
+    Env => Azure Database
+    Info => Stores user profiles and license data
+  }
+
+  rectangle CHART_MANAGEMENT {
+    map CHART_UPLOADER {
+      Team => OpenNav Team
+      Stack => Node.js + React
+      Env => Azure Static Web App
+      Info => Upload interface for chart providers
+    }
+
+    map CHART_VALIDATOR {
+      Team => OpenNav Team
+      Stack => Go
+      Env => Azure VM
+      Info => Validates chart formats and metadata
+    }
+
+    map CHART_API {
+      Team => OpenNav Team
+      Stack => Python + FastAPI
+      Env => Azure App Service
+      Info => Public API for accessing charts
+    }
+  }
+}
+
+rectangle SECURITY_MODULE {
+  map KEYLESS_AUTH {
+    Team => KeyLib Team
+    Stack => C#/.Net 8, gRPC
+    Env => Azure App Service
+    Info => Keyless activation for chart access
+  }
+
+  map ENCRYPTION_SERVICE {
+    Team => KeyLib Team
+    Stack => Rust
+    Env => Azure VM
+    Info => Encrypts chart data before distribution
+  }
+}
+
+rectangle INTEGRATIONS {
+  map SIMULATOR_CONNECTOR {
+    Team => OpenNav Team
+    Stack => Python
+    Env => Azure Functions
+    Info => Connects to external simulators
+  }
+
+  map THIRD_PARTY_API {
+    Team => OpenNav Team
+    Stack => Node.js
+    Env => Azure App Service
+    Info => Integrates with external data providers
+  }
+}
+
+rectangle MONITORING {
+  map METRICS_COLLECTOR {
+    Team => Mon Team
+    Stack => Prometheus + Grafana
+    Env => Kubernetes
+    Info => Collects and visualizes system metrics
+  }
+
+  map ALERT_MANAGER {
+    Team => Mon Team
+    Stack => Go
+    Env => Kubernetes
+    Info => Sends alerts based on system events
+  }
+}
+
+' Connections
+NAVIGATION_ENGINE <-- USER_DATABASE : User preferences[PostgreSQL]
+LICENSE_MANAGER <-> USER_DATABASE : Validates license[PostgreSQL]
+CHART_API <-> USER_DATABASE : Checks license before access[PostgreSQL]
+CHART_API --> ENCRYPTION_SERVICE : Encrypted charts[REST]
+CHART_API <-- ENCRYPTION_SERVICE : Decrypted charts[REST]
+KEYLESS_AUTH --> LICENSE_MANAGER : Data for activation[REST]
+KEYLESS_AUTH <-- LICENSE_MANAGER : Activation[REST]
+THIRD_PARTY_API --> CHART_API : Chart requests[REST]
+THIRD_PARTY_API <-- CHART_API : Charts[REST]
+METRICS_COLLECTOR <-- INTEGRATIONS : Metrics[REST]
+METRICS_COLLECTOR <-- SECURITY_MODULE : Metrics[REST]
+METRICS_COLLECTOR <-- CORE_SYSTEM : Metrics[REST]
+ALERT_MANAGER --> METRICS_COLLECTOR : Alerts[REST]
+@enduml

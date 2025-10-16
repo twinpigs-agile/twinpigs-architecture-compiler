@@ -1,0 +1,100 @@
+ast_node type="root"
+ src: f="<FILE>"
+ attr name="file": <FILE>
+ attr name="hash": 1e1569ffca767eaba5eb37a1ded09d6b5508fdbd101875ab5248b1c1252e3392
+ child:
+  ast_node type="program_system"
+   src: f="<FILE>", l="2", c="1"
+   attr name="id": SOME_EMPTY_MAP
+   attr name="name": SOME_EMPTY_MAP
+   attr name="num_id": 0
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="properties": OrderedDict()
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="program_system"
+   src: f="<FILE>", l="4", c="1"
+   attr name="id": ANOTHER_EMPTY_MAP
+   attr name="name": ANOTHER EMPTY MAP
+   attr name="num_id": 1
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="properties": OrderedDict()
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="program_system"
+   src: f="<FILE>", l="9", c="1"
+   attr name="id": SECOND_EMPTY_MAP
+   attr name="name": SECOND EMPTY MAP
+   attr name="num_id": 2
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="properties": OrderedDict()
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="program_system"
+   src: f="<FILE>", l="12", c="1"
+   attr name="id": REAL_MAP
+   attr name="name": REAL_MAP
+   attr name="num_id": 3
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="properties": OrderedDict({'hello': 'превед!', 'bye': 'дасведанея!', 'bear': ' медвед!', 'good_morning': '  бобройе удро!'})
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="13", c="5"
+     attr name="id": hello
+     attr name="value": превед!
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="14", c="5"
+     attr name="id": bye
+     attr name="value": дасведанея!
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="15", c="1"
+     attr name="id": bear
+     attr name="value":  медвед!
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="16", c="1"
+     attr name="id": good_morning
+     attr name="value":   бобройе удро!
+ child:
+  ast_node type="program_system"
+   src: f="<FILE>", l="18", c="1"
+   attr name="id": REAL_MAP_ALIASED
+   attr name="name": An aliased map
+   attr name="num_id": 4
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="properties": OrderedDict({'hello': 'превед!', 'bye': 'дасведанея!', 'bear': ' медвед!', 'good_morning': '  бобройе\nудро!'})
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="19", c="5"
+     attr name="id": hello
+     attr name="value": превед!
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="20", c="5"
+     attr name="id": bye
+     attr name="value": дасведанея!
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="21", c="1"
+     attr name="id": bear
+     attr name="value":  медвед!
+   child:
+    ast_node type="property"
+     src: f="<FILE>", l="22", c="1"
+     attr name="id": good_morning
+     attr name="value":   бобройе
+удро!

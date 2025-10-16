@@ -1,0 +1,14 @@
+@startuml
+rectangle A {
+}
+rectangle "B" as C {
+}
+rectangle D {
+    map E {
+    }
+    rectangle "F" as G {
+        map H {
+        }
+    }
+}
+@enduml

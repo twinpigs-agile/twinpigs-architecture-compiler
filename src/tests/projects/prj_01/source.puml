@@ -1,0 +1,135 @@
+@startuml
+'left to right direction
+rectangle "External AIS Receiver" AS AIS_RCV {
+}
+
+rectangle IOT_EDGE_CONTAINERS {
+
+map "NMEA Connector (IOT Edge)" as NMEA_CONNECTOR_EDGE {
+        Team => IOT Edge Team
+        Stack => Java
+        Env => Container(Linux)
+        Info => Read GPS & Speedlog Info
+}
+
+map "NMEA Connector (Voyage)" as NMEA_CONNECTOR_VOYAGE {
+        Team => UniNAV Team
+        Stack => C++, Linux/Windows
+        Env => Container(Linux)
+        Info => Read GPS & Speedlog Info
+}
+
+map "Modbus Connector (Voyage)" as MODBUS_CONNECTOR_VOYAGE {
+        Team => UniNAV Team
+        Stack => C++, Linux/Windows
+        Env => Container(Linux)
+        Info => Supports MODBUS RTU & TCP/IP\nto access hardware
+}
+
+map "Modbus Connector (Microsoft)" as MODBUS_CONNECTOR_MS {
+        Team => MS
+        Stack => .Net Core 2.1, Linux/Windows
+        Env => Container(Linux)
+        Info => Supports MODBUS RTU & TCP/IP\nto access hardware
+}
+
+map "AIS Connector (Voyage)" as AIS_CONNECTOR_VOYAGE {
+        Team => UniNAV Team
+        Stack => C++, Linux/Windows
+        Env => Container (Linux)
+        Info => Retrieves AIS data using NMEA 450 (UDP)
+}
+
+map "OPC UA Connector (Voyage)" as OPC_UA_CONNECTOR_VOYAGE {
+        Team => Connected Automation Team
+        Stack => C#/.Net, Linux/Windows
+        Env => Container(Linux)
+        Info => Reads automation data from OPC UA
+}
+
+map NPL {
+        Team =>
+        Stack =>
+        Env =>
+        Info =>
+}
+
+map "ISM (NACOS)" as ISM_NACOS {
+        Team => NACOS
+        Stack => Python, C
+        Env => Container(Linux)
+        Info => Reads the automation data from ISM Server
+}
+
+/'
+map "Smart Move" as SMART_MOVE {
+        Team =>
+        Stack =>
+        Env =>
+        Info =>
+}
+
+map RADAR {
+        Team =>
+        Stack =>
+        Env =>
+        Info =>
+}
+
+map VIDEO {
+        Team =>
+        Stack =>
+        Env =>
+        Info =>
+}
+'/
+
+map "IOT Edge" as IOT_EDGE {
+        Team => IOT Edge Team
+        Stack => MS IOT Edge
+        Env => Linux/Windows (xplatform)
+        Info => Manages the containers\n& consolidates the data
+}
+
+}
+
+rectangle "ISM Server" as ISM_SERVER {
+}
+
+map "NACOS System" as NACOS {
+        Team => NACOS Team
+        Stack => C#/.Net
+        Env => Windows, Board Computers
+        Info => NACOS Bridge System
+}
+
+
+map CSR {
+        Team => Voyage
+        Stack =>
+        Env =>
+        Info => Hardware (Robustel firewall\nreconfigured by Voyage)
+}
+/'
+rectangle "3rd Pty Automation" as TP_AUTOMATION {
+}
+'/
+
+ISM_NACOS -- IOT_EDGE : Automation data [JSON/TCP]
+ISM_NACOS -- ISM_SERVER : Automation data [Proprietary protocol]
+
+IOT_EDGE <-> CSR : Network communication [TCP/IP]
+NPL <-> CSR : Network communication [TCP/IP]
+
+AIS_CONNECTOR_VOYAGE <-- AIS_RCV : AIS data[AIS_NMEA_DATA/UDP]
+AIS_CONNECTOR_VOYAGE --> IOT_EDGE: AIS Data[JSON/IOT EDGE SDK]
+
+NMEA_CONNECTOR_EDGE --> IOT_EDGE: GPS & Speedlog data[JSON/TCP] TODO: TCP?
+NMEA_CONNECTOR_VOYAGE --> IOT_EDGE: GPS & Speedlog data[JSON/TCP] TODO: TCP?
+
+MODBUS_CONNECTOR_VOYAGE --> IOT_EDGE: GPS & Speedlog data[JSON/TCP] TODO: TCP?
+MODBUS_CONNECTOR_MS --> IOT_EDGE: GPS & Speedlog data[JSON/TCP] TODO: TCP?
+
+OPC_UA_CONNECTOR_VOYAGE -> NACOS : Automation info [OPC UA]
+OPC_UA_CONNECTOR_VOYAGE <- IOT_EDGE : Automation info [JSON/TCP]
+@enduml

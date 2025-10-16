@@ -1,0 +1,346 @@
+ast_node type="root"
+ src: f="<FILE>"
+ attr name="file": <FILE>
+ attr name="hash": a3aab52a06d3897625065b61ad8717aa379bcd4cf74289a3305f6e7501decb27
+ child:
+  ast_node type="ext_program_system"
+   src: f="<FILE>", l="2", c="1"
+   attr name="group_type": group
+   attr name="id": A
+   attr name="name": A
+   attr name="num_id": 0
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="program_system"
+   src: f="<FILE>", l="4", c="1"
+   attr name="id": B
+   attr name="name": B
+   attr name="num_id": 1
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="properties": OrderedDict()
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="7", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="8", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="9", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="10", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="11", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c1
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="12", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c2
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="13", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c3
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="14", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c4
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="16", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="17", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="18", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="19", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="20", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c1
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="21", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c2
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="22", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c3
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="23", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c4
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="25", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="26", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="27", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="28", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="29", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c1
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="30", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c2
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="31", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c3
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="32", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c4
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="34", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="35", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="36", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="37", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": None
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="38", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c1
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="39", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": False
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c2
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="40", c="1"
+   attr name="_1to2": False
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c3
+   attr name="num_id1": 0
+   attr name="num_id2": 1
+ child:
+  ast_node type="link"
+   src: f="<FILE>", l="41", c="1"
+   attr name="_1to2": True
+   attr name="_2to1": True
+   attr name="id1": A
+   attr name="id2": B
+   attr name="info": c4
+   attr name="num_id1": 0
+   attr name="num_id2": 1

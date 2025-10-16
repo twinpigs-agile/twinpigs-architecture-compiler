@@ -1,0 +1,4 @@
+ast_node type="root"
+ src: f="<FILE>"
+ attr name="file": <FILE>
+ attr name="hash": 1a659415258ffab728a7e2caf6c78b78fb13a9540a990635172152b0420c2e3d

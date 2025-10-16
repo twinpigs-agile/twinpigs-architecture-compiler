@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by Twin Pigs-->
+{% macro subgraph(tree) -%}
+  {%- for node in tree -%}
+    {%- if node.type == "group" %}
+      <node id="n{{ node.num_id }}">
+        <data key="d1" xml:space="preserve">{{ node.id }}</data>
+        <data key="d2" xml:space="preserve">{{ node.name | e }}</data>
+        <data key="d3" xml:space="preserve">{{ node.src_ref | e }}</data>
+        <data key="d0" xml:space="preserve">
+          <y:ProxyAutoBoundsNode>
+            <y:Realizers active="0">
+              <y:GenericGroupNode configuration="DemoGroup">
+                <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+                <y:BorderStyle color="#000000" type="line" width="8.0"/>
+                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="{{ [48, 36] [node.depth>=1] }}" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="inner" modelPosition="t" borderDistance="14.0" textColor="#000000" verticalTextPosition="top" visible="true" xml:space="preserve">{{ node.name }}</y:NodeLabel>
+                <!--<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="{{ [48, 36] [node.depth>=1] }}" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" xml:space="preserve">{{ node.name }}</y:NodeLabel>-->
+                <y:State autoResize="true" closed="false" closedHeight="250.0" closedWidth="300.0"/>
+                <y:Insets bottom="45" bottomF="45.0" left="45" leftF="45.0" right="45" rightF="45.0" top="45" topF="45.0"/>
+                <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              </y:GenericGroupNode>
+            </y:Realizers>
+          </y:ProxyAutoBoundsNode>
+        </data>
+        <graph edgedefault="directed" id="subgraph_{{ node.num_id }}">
+
+          {{ subgraph(node.children) }}
+          
+        </graph>
+      </node>
+    {%- elif node.type == "ext_program_system" %}
+      <node id="n{{ node.num_id }}">
+        <data key="d1" xml:space="preserve">{{ node.id }}</data>
+        <data key="d2" xml:space="preserve">{{ node.name | e }}</data>
+        <data key="d3" xml:space="preserve">{{ node.src_ref | e }}</data>
+        <data key="d4" xml:space="preserve">{{ node.description | e }}</data>
+        <data key="d0">
+          <y:ShapeNode>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" textColor="#000000" visible="true" xml:space="preserve">{{ node.name }}</y:NodeLabel>
+            <y:Geometry height="100.0" width="100.0"/>
+            <y:Fill color="#CCCCCC" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:Shape type="rectangle"/>
+          </y:ShapeNode>
+        </data>
+      </node>
+    {%- elif node.type == "program_system" %}
+      <node id="n{{ node.num_id }}">
+        <data key="d1" xml:space="preserve">{{ node.id }}</data>
+        <data key="d2" xml:space="preserve">{{ node.name | e }}</data>
+        <data key="d3" xml:space="preserve">{{ node.src_ref | e }}</data>
+        <data key="d4" xml:space="preserve">{{ node.description | e }}</data>
+        <data key="d5" xml:space="preserve">{{ node.stack | e }}</data>
+        <data key="d6" xml:space="preserve">{{ node.env | e }}</data>
+        <data key="d7" xml:space="preserve">{{ node.team | e }}</data>
+        <data key="d10"/>
+        <data key="d0">
+          <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+            <y:Geometry height="200.0" width="250.0"/>
+            <y:Fill color="#{{ colors(node.parent_id) }}" color2="#{{ lighten(colors(node.parent_id)) }}" transparent="false"/>
+            <y:BorderStyle color="#000000" type="line" width="1.0"/>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasLineColor="false" height="25" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">{{ node.id }}</y:NodeLabel>
+            <y:NodeLabel alignment="center" autoSizePolicy="content" hasBackgroundColor="false" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasLineColor="false" height="60" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="250.0" x="0.0" xml:space="preserve" y="31.8447265625">
+
+{% if node.name != node.id %}Name: {{ node.name }}
+{% endif %}{% if node.team %}T: {{ node.team }}
+{% endif %}{% if node.team %}Stk: {{ node.stack }}
+{% endif %}{% if node.env %}Env: {{ node.env }}
+{% endif %}{% if node.description %}{{ node.description }}{% endif %}<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+            <y:StyleProperties>
+              <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+            </y:StyleProperties>
+          </y:GenericNode>
+        </data>
+      </node>
+    {%- endif %}
+  {% endfor -%}
+{%- endmacro %}
+  <key for="node" id="d0" yfiles.type="nodegraphics"/>
+  <key attr.name="ident" attr.type="string" for="node" id="d1"/>
+  <key attr.name="name" attr.type="string" for="node" id="d2"/>
+  <key attr.name="file" attr.type="string" for="node" id="d3"/>
+  <key attr.name="description" attr.type="string" for="node" id="d4"/>
+  <key attr.name="stack" attr.type="string" for="node" id="d5"/>
+  <key attr.name="env" attr.type="string" for="node" id="d6"/>
+  <key attr.name="team" attr.type="string" for="node" id="d7"/>
+  <key attr.name="file" attr.type="string" for="edge" id="d11"/>
+  <key attr.name="info" attr.type="string" for="edge" id="d12"/>
+  <key for="edge" id="d13" yfiles.type="edgegraphics"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d14"/>
+  <key for="graphml" id="d21" yfiles.type="resources"/>
+  <graph edgedefault="directed" id="G">
+    {{ subgraph(tree) }}
+    {% for edge in links -%}
+    <edge id="e{{ loop.index }}" source="n{{ edge.num_id1 }}" target="n{{ edge.num_id2 }}" directed="false">
+      <data key="d14" xml:space="preserve">{{ edge.id1 | e }}--{{ edge.id2 | e }}</data>
+      <data key="d11" xml:space="preserve">{{ edge.src_ref | e }}</data>
+      <data key="d12" xml:space="preserve">{{ edge.info | e }}</data>
+      <data key="d13">
+        <y:PolyLineEdge>
+          <y:LineStyle color="#FF2050" type="line" width="1.0"/>
+          <y:Arrows source="{%- if edge._2to1 -%}standard{%- else -%}none{%- endif -%}" target="{%- if edge._1to2 -%}standard{%- else -%}none{%- endif -%}"/>
+          <y:EdgeLabel modelName="custom" preferredPlacement="center" alignment="center" textColor="#000080" fontSize="10" fontFamily="Courier"
+                       horizontalTextPosition="center" verticalTextPosition="center" visible="true" configuration="AutoFlippingLabel">{% if edge.info %}{{ edge.info }}{% endif %}<y:LabelModel>
+            <y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="0" distanceRelativeToEdge="true" mode="center_slider"/>
+            </y:LabelModel>
+            </y:EdgeLabel>
+            <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    {%- endfor %}
+  </graph>
+  <data key="d7">
+    <y:Resources/>
+  </data>
+</graphml>

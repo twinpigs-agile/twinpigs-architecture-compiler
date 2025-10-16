@@ -1,0 +1,42 @@
+@startuml
+rectangle A {
+}
+map B {
+}
+
+A -- B
+A -> B
+A <- B
+A <-> B
+A -- B : c1
+A -> B : c2
+A <- B : c3
+A <-> B : c4
+
+"A" -- B
+"A" -> B
+"A" <- B
+"A" <-> B
+"A" -- B : c1
+"A" -> B : c2
+"A" <- B : c3
+"A" <-> B : c4
+
+A -- "B"
+A -> "B"
+A <- "B"
+A <-> "B"
+A -- "B" : c1
+A -> "B" : c2
+A <- "B" : c3
+A <-> "B" : c4
+
+"A" -- "B"
+"A" -> "B"
+"A" <- "B"
+"A" <-> "B"
+"A" -- "B" : c1
+"A" -> "B" : c2
+"A" <- "B" :c3
+"A" <-> "B" :	c4
+@enduml

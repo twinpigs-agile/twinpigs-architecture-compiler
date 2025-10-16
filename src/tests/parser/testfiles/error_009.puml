@@ -1,0 +1,10 @@
+@startuml
+rectangle A {
+    rectangle B {
+        map C {
+            a=>1
+            a=>2
+        }
+    }
+}
+@enduml

@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-01 15:13+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pc/errorlog/error.py:35
+msgid "Note"
+msgstr "Замѣчаніе"
+
+#: pc/errorlog/error.py:35
+msgid "Warning"
+msgstr "Предупрежденіе"
+
+#: pc/errorlog/error.py:35
+msgid "Error"
+msgstr "Ошибка"
+
+#: pc/errorlog/error.py:35
+msgid "Fatal"
+msgstr "Фатальная ошибка"
+
+#: pc/lexer/lexer.py:46
+#, python-brace-format
+msgid "A C-style comment should be closed before EOF in {file}"
+msgstr "Комментарій въ стиле языка C подлежитъ закрытію до конца файла {file}"
+
+#: pc/lexer/lexer.py:144
+#, python-brace-format
+msgid "Illegal character {char}, file {file}, line {line}, col {col}"
+msgstr "Недопустимый знакъ {char}, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/lexer/lexer.py:165
+#, python-brace-format
+msgid "Illegal character in a C++-style comment: {char}, file {file}, line {line}, col {col}"
+msgstr "Недопустимый знакъ въ комментариѣ стиля C++: {char}, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/lexer/lexer.py:175
+#, python-brace-format
+msgid "Illegal character in a C-style comment: {char}, file {file}, line {line}, col {col}"
+msgstr "Недопустимый знакъ въ комментариѣ стиля C: {char}, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/lexer/lexer.py:185
+#, python-brace-format
+msgid "Illegal character in a string: {char}, file {file}, line {line}, col {col}"
+msgstr "Недопустимый знакъ въ строкѣ: {char}, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/lexer/lexer.py:201
+#, python-brace-format
+msgid "String contains an invalid escape code, {file}, line {line}, col {col}"
+msgstr "Строка содержитъ недопустимый escape-кодъ, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/lexer/lexer.py:235
+#, python-brace-format
+msgid "An unclosed string literal found, {file}, line {line}, col {col}"
+msgstr "Обнаруженъ незакрытый строковый литералъ, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/lexer/lexer.py:256
+#, python-brace-format
+msgid "Property contains an invalid escape code, {file}, line {line}, col {col}"
+msgstr "Свойство содержитъ недопустимый escape-кодъ, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/lexer/lexer.py:303
+#, python-brace-format
+msgid "Link info contains an invalid escape code, {file}, line {line}, col {col}"
+msgstr "Информація о ссылкѣ содержитъ недопустимый escape-кодъ, файлъ {file}, строка {line}, столбецъ {col}"
+
+#: pc/parser/parser.py:38
+#, python-brace-format
+msgid "Syntax error near {v}, {f}, line {l}, col {c}"
+msgstr "Синтаксическая ошибка около {v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/parser/parser.py:46
+#, python-brace-format
+msgid "Syntax error at the end of \"{f}\""
+msgstr "Синтаксическая ошибка въ концѣ файла \"{f}\""
+
+#: pc/parser/parser.py:148
+#, python-brace-format
+msgid "An item ID should not start or end with whitespace! ID: {v}, file {f}, line {l}, col {c}"
+msgstr "Идентификаторъ элемента не долженъ начинаться или оканчиваться пробѣломъ! ID: {v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/parser/parser.py:152
+#, python-brace-format
+msgid "Illegal symbols found in an item ID! ID: {v}, file {f}, line {l}, col {c}"
+msgstr "Недопустимыя знаки въ идентификаторѣ элемента! ID: {v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/parser/parser.py:164
+#, python-brace-format
+msgid "Illegal symbols found in an item name! Name: {v}, file {f}, line {l}, col {c}"
+msgstr "Недопустимыя знаки въ наименованіи элемента! Имя: {v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/postparse/ppvisitors.py:29
+#, python-brace-format
+msgid "The object mentioned above: file {f}, line {l}, col {c}"
+msgstr "Упомянутый выше объектъ: файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/postparse/ppvisitors.py:39
+#, python-brace-format
+msgid "An object's ID duplicates another object's ID. ID={v}, file {f}, line {l}, col {c}"
+msgstr "Идентификаторъ объекта совпадаетъ съ другимъ. ID={v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/postparse/ppvisitors.py:50
+#, python-brace-format
+msgid "An object's ID duplicates another object's name. ID/name={v}, file {f}, line {l}, col {c}"
+msgstr "Идентификаторъ объекта совпадаетъ съ наименованіемъ другого. ID/имя={v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/postparse/ppvisitors.py:62
+#, python-brace-format
+msgid "An object's name duplicates another object's ID. Name/ID={v}, file {f}, line {l}, col {c}"
+msgstr "Наименованіе объекта совпадаетъ съ идентификаторомъ другого. Имя/ID={v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/postparse/ppvisitors.py:74
+#, python-brace-format
+msgid "An object's name duplicates another object's name. name={v}, file {f}, line {l}, col {c}"
+msgstr "Наименованіе объекта совпадаетъ съ наименованіемъ другого. Имя={v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/postparse/ppvisitors.py:134
+#, python-brace-format
+msgid "An unresolved object reference: {v}, file {f}, line {l}, col {c}"
+msgstr "Неразрѣшённая ссылка на объектъ: {v}, файлъ {f}, строка {l}, столбецъ {c}"
+
+#: pc/postparse/ppvisitors.py:180
+#, python-brace-format
+msgid "A duplicate property found in a map object, id={v}, file {f}, line {l}, col {c}"
+msgstr "Обнаружено повторяющееся свойство въ объектѣ map, id={v}, файлъ {f}, строка {l}, столбецъ {c}"

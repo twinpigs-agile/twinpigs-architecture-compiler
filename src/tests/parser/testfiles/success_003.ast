@@ -1,0 +1,70 @@
+ast_node type="root"
+ src: f="<FILE>"
+ attr name="file": <FILE>
+ attr name="hash": 46576076b87c9ca28b243e4feaf97471911170bc95e87c423680ae4d721a9785
+ child:
+  ast_node type="ext_program_system"
+   src: f="<FILE>", l="2", c="1"
+   attr name="group_type": group
+   attr name="id": A
+   attr name="name": A
+   attr name="num_id": 0
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="ext_program_system"
+   src: f="<FILE>", l="4", c="1"
+   attr name="group_type": group
+   attr name="id": C
+   attr name="name": B
+   attr name="num_id": 1
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+ child:
+  ast_node type="group"
+   src: f="<FILE>", l="6", c="1"
+   attr name="group_type": group
+   attr name="id": D
+   attr name="name": D
+   attr name="num_id": 2
+   attr name="num_parent": -1
+   attr name="parent_id": False
+   attr name="qualified_id_prefix": []
+   attr name="qualified_name_prefix": []
+   child:
+    ast_node type="program_system"
+     src: f="<FILE>", l="7", c="5"
+     attr name="id": E
+     attr name="name": E
+     attr name="num_id": 3
+     attr name="num_parent": 2
+     attr name="parent_id": D
+     attr name="properties": OrderedDict()
+     attr name="qualified_id_prefix": ['D']
+     attr name="qualified_name_prefix": ['D']
+   child:
+    ast_node type="group"
+     src: f="<FILE>", l="9", c="5"
+     attr name="group_type": group
+     attr name="id": G
+     attr name="name": F
+     attr name="num_id": 4
+     attr name="num_parent": 2
+     attr name="parent_id": D
+     attr name="qualified_id_prefix": ['D']
+     attr name="qualified_name_prefix": ['D']
+     child:
+      ast_node type="program_system"
+       src: f="<FILE>", l="10", c="9"
+       attr name="id": H
+       attr name="name": H
+       attr name="num_id": 5
+       attr name="num_parent": 4
+       attr name="parent_id": G
+       attr name="properties": OrderedDict()
+       attr name="qualified_id_prefix": ['D', 'G']
+       attr name="qualified_name_prefix": ['D', 'F']
